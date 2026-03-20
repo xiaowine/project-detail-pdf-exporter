@@ -4,7 +4,7 @@
 	"displayName": "工程详情 PDF 导出",
 	"description": "读取工程详细信息并导出 PDF 的扩展工具",
 	"version": "1.0.0",
-	"publisher": "https://github.com/xiaowine/project-detail-pdf-exporter/",
+	"publisher": "xiao_wine",
 	"engines": {
 		"eda": "^3.0.0"
 	},
