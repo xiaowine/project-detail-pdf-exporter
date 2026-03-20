@@ -3,7 +3,7 @@
 	"description": "读取工程详细信息并导出 PDF 的扩展工具。",
 	"author": "xiao_wine",
 	"license": "Apache-2.0",
-	"homepage": "https://pro.lceda.cn/",
+	"homepage": "https://github.com/xiaowine/project-detail-pdf-exporter/",
 	"scripts": {
 		"compile": "rimraf ./dist/ && ts-node ./config/esbuild.prod.ts",
 		"prepare": "husky",

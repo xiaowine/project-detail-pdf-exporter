@@ -4,24 +4,26 @@
 	"displayName": "工程详情 PDF 导出",
 	"description": "读取工程详细信息并导出 PDF 的扩展工具",
 	"version": "1.0.0",
-	"publisher": "",
+	"publisher": "https://github.com/xiaowine/project-detail-pdf-exporter/",
 	"engines": {
 		"eda": "^3.0.0"
 	},
 	"license": "Apache-2.0",
 	"repository": {
 		"type": "extension-store",
-		"url": ""
+		"url": "https://github.com/xiaowine/project-detail-pdf-exporter/"
 	},
 	"categories": "Other",
 	"keywords": [
-		"SDK"
+		"PDF",
+		"Export",
+		"导出"
 	],
 	"images": {
-		"logo": "./images/logo.svg"
+		"logo": "./images/logo.png"
 	},
-	"homepage": "",
-	"bugs": "",
+	"homepage": "https://github.com/xiaowine/project-detail-pdf-exporter/",
+	"bugs": "https://github.com/xiaowine/project-detail-pdf-exporter/issues/",
 	"activationEvents": {},
 	"entry": "./dist/index",
 	"dependentExtensions": {},
