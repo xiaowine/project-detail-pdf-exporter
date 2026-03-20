@@ -1,0 +1,56 @@
+{
+	"name": "project-detail-pdf-exporter",
+	"uuid": "e3c88a6753474fc397bd186e0ab37794",
+	"displayName": "工程详情 PDF 导出",
+	"description": "读取工程详细信息并导出 PDF 的扩展工具",
+	"version": "1.0.0",
+	"publisher": "",
+	"engines": {
+		"eda": "^3.0.0"
+	},
+	"license": "Apache-2.0",
+	"repository": {
+		"type": "extension-store",
+		"url": ""
+	},
+	"categories": "Other",
+	"keywords": [
+		"SDK"
+	],
+	"images": {
+		"logo": "./images/logo.svg"
+	},
+	"homepage": "",
+	"bugs": "",
+	"activationEvents": {},
+	"entry": "./dist/index",
+	"dependentExtensions": {},
+	"headerMenus": {
+		"home": [
+			{
+				"id": "工程详情导出",
+				"title": "工程详情导出",
+				"menuItems": [
+					{
+						"id": "导出",
+						"title": "导出...",
+						"registerFn": "exportPdf"
+					}
+				]
+			}
+		],
+		"sch": [
+			{
+				"id": "工程详情导出",
+				"title": "工程详情导出"
+
+			}
+		],
+		"pcb": [
+			{
+				"id": "工程详情导出",
+				"title": "工程详情导出"
+			}
+		]
+	}
+}

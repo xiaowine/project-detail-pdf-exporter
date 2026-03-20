@@ -1,0 +1,58 @@
+{
+	"name": "project-detail-pdf-exporter",
+	"description": "读取工程详细信息并导出 PDF 的扩展工具。",
+	"author": "xiao_wine",
+	"license": "Apache-2.0",
+	"homepage": "https://pro.lceda.cn/",
+	"scripts": {
+		"compile": "rimraf ./dist/ && ts-node ./config/esbuild.prod.ts",
+		"prepare": "husky",
+		"prettier:all": "prettier --write .",
+		"eslint:all": "eslint --ext .ts --fix .",
+		"fix": "pnpm run prettier:all && pnpm run eslint:all",
+		"build": "pnpm run vite-build && pnpm run compile && ts-node ./build/packaged.ts",
+		"vite-build": "vue-tsc -b --noEmit && vite build",
+		"dev": "vite",
+		"check-install": "node ./build/check-lceda-auto-install.js"
+	},
+	"dependencies": {
+		"pdfmake": "^0.3.7",
+		"vue": "^3.5.24",
+		"vue-router": "^4.6.3"
+	},
+	"devDependencies": {
+		"@jlceda/pro-api-types": "^0.2.21",
+		"@microsoft/tsdoc": "^0.15.1",
+		"@trivago/prettier-plugin-sort-imports": "^5.2.1",
+		"@types/fs-extra": "^11.0.4",
+		"@types/node": "^24.10.1",
+		"@typescript-eslint/eslint-plugin": "^7.18.0",
+		"@typescript-eslint/parser": "^7.18.0",
+		"@vitejs/plugin-vue": "^6.0.1",
+		"@vue/tsconfig": "^0.8.1",
+		"esbuild": "^0.24.2",
+		"eslint": "^8.57.0",
+		"eslint-config-alloy": "^5.1.2",
+		"eslint-plugin-tsdoc": "^0.4.0",
+		"fs-extra": "^11.3.0",
+		"husky": "^9.1.7",
+		"ignore": "^7.0.3",
+		"jszip": "^3.10.1",
+		"lint-staged": "^15.3.0",
+		"playwright": "^1.58.2",
+		"prettier": "^3.4.2",
+		"rimraf": "^6.0.1",
+		"sass-embedded": "^1.93.3",
+		"ts-node": "^10.9.2",
+		"typescript": "~5.9.3",
+		"vite": "^7.2.4",
+		"vue-tsc": "^3.1.4"
+	},
+	"lint-staged": {
+		"*.ts": "eslint --cache --fix",
+		"*.{js,ts,html,css,json,md}": "prettier --write"
+	},
+	"engines": {
+		"node": ">=20.5.0"
+	}
+}
